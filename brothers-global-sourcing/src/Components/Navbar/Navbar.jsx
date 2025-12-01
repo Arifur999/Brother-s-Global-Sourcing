@@ -23,15 +23,15 @@ export default function Navbar() {
           {/* LEFT: logo + title */}
           <div className="flex items-center gap-4 flex-shrink-0">
             <img src={logo} alt="BGS Logo" className="h-14 w-14 rounded bg-white p-1 object-contain" />
-            <div className="hidden sm:flex flex-col leading-tight">
+            <div className="hidden  sm:flex flex-col leading-tight">
               <span className="text-white text-lg font-semibold tracking-wide">BROTHER'S GLOBAL SOURCING</span>
               <span className="text-gray-300 text-xs -mt-1">Garments Buying House – Bangladesh</span>
             </div>
           </div>
 
           {/* CENTER: show from md and up, left-aligned next to logo */}
-          <nav className="hidden md:flex items-center ml-8 flex-1 overflow-visible">
-            <ul className="flex items-center gap-8">
+          <nav className="hidden md:flex items-center  justify-center flex-1 overflow-visible">
+            <ul className="flex items-center lg:gap-8 md:gap-4">
               {navItems.map((item) => (
                 <li key={item.to} className="relative group">
                   <NavLink to={item.to} end={item.to === "/"}>

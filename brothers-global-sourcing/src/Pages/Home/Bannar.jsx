@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Services = () => {
+const Bannar = () => {
     return (
         <div>
-            <h1>services</h1>
+            
         </div>
     );
 };
 
-export default Services;
+export default Bannar;
